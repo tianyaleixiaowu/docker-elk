@@ -12,4 +12,4 @@ path.config: /usr/share/logstash/pipeline
 #xpack.monitoring.enabled: false
 xpack.monitoring.elasticsearch.url: "http://elasticsearch:9200" 
 xpack.monitoring.elasticsearch.username: "logstash_system" 
-xpack.monitoring.elasticsearch.password: "changeme"
+xpack.monitoring.elasticsearch.password: "wolf"
