@@ -16,8 +16,8 @@
 
 # Linux: the unprivileged elasticsearch user is used within the Elasticsearch image, therefore the mounted data directory must be owned by the uid 1000.
 # macOS: the default Docker for Mac configuration allows mounting files from /Users/, /Volumes/, /private/, and /tmp exclusively. Follow the instructions from the documentation to add more locations.
-#FROM docker.elastic.co/elasticsearch/elasticsearch:5.6.3
-FROM docker.elastic.co/elasticsearch/elasticsearch-basic:6.1.0
+FROM docker.elastic.co/elasticsearch/elasticsearch:5.6.3
+#FROM docker.elastic.co/elasticsearch/elasticsearch-basic:6.1.0
 COPY config/elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
 VOLUME /usr/share/elasticsearch/data
 # Add your elasticsearch plugins setup here
